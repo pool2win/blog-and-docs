@@ -3,6 +3,14 @@ layout: post
 title: FROST Library for Point to Point Networks
 ---
 
+This post outlines the communication requirements for implementing
+FROST in a point to point communication model, and describe my plans
+to build a Rust library providing FROST in a such network model. The
+library will be used to build a decentralised mining solution for
+bitcoin.
+
+## Motivation
+
 Threshold Signatures in point to point networks enable multiple
 parties to agree on the state of system at regular intervals. This
 enables applications where members of the network need to agree on a
