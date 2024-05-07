@@ -49,8 +49,8 @@ authentication and transmission of static public keys and therefore
 provides the requirements of Authentication and Confidential channels
 between any two parties.
 
-Reliability is satisfied by using point to point noise channels using
-TCP.
+Reliability is satisfied by requiring explicit ACKs for messages sent
+over the point to point channel.
 
 Unordered communication is a relaxation on the requirements and
 therefore we don't need to address it further.
@@ -77,7 +77,9 @@ noise channels.
 
 With the point to point noise channels on TCP we get Authenticated,
 Reliable and Ordered broadcast. Consistency is sufficiently satisfied
-by the echo-broadcast protocol.
+by the [echo-broadcast](https://eprint.iacr.org/2002/040.pdf)
+protocol. I will soon write a layman description of echo broadcast in
+another post.
 
 ## Implementation Plan
 
