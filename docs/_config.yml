@@ -6,14 +6,13 @@ theme: minima
 minima:
   social_links:
     - { platform: github,  user_url: "https://github.com/pool2win" }
-    - { platform: twitter, user_url: "https://twitter.com/pool2win" }
+    - { platform: twitter, user_url: "https://twitter.com/jungly" }
 header_pages:
   - specification.md
 show_excerpts: true
-title: Braidpool Development Blog
-tagline: Dev progress
-description: Braidpool - Decentralised Mining for Bitcoin
+title: Kulpreet's Development Blog
+description: Bitcoin and Distributed Systems
 logo: assets/BC_Logo_.png
 twitter:
   card: summary
-  username: pool2win
+  username: jungly
