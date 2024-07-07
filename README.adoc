@@ -1,2 +1,2 @@
 
-Repository for files that generated Braidpool docs and proposal
+Repository for designs, proposals and presentations
