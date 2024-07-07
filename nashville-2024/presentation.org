@@ -1,0 +1,57 @@
+
+* Headline Ideas
+
+** Bitcoin's Mining Problem - Proprietary Software
+
+** Bitcoin's Mining Problem - Closed Source Software Services
+
+** Mining Centralisation - Real Problem is Closed Source Software
+
+** Decentralising Mining Needs Open Source Solutions
+***  Stop Opaque Accounting & Proprietary Software
+
+** Mining Needs Open Source Solutions
+
+** Mining Decentralisation Needs Open Source Solutions
+
+** Mining Runs on Proprietary software
+
+** Mining's Problem - Proprietary Software Services
+
+** Disrupting Mining with Open Source Solutions
+
+** Open Source Mining Pools
+*** An Innovation Waiting To Happen
+
+** Open Source Mining Pools
+*** Solving The Infrastrucutre Challenges
+
+** Decentralisation Needs Open Source Tools
+***  Mining Pools 
+
+** Miner's - Don't Be A Post Master
+*** Build and Use FOSS
+
+** Open Innovation For Mining Software Services
+
+
+* Structure
+
+** Story about Horizon
+
+** Miners are running blind like the Post Masters
+
+** SaaS or SaSS
+
+** Eric Hughes
+
+We publish our code so that our fellow Cypherpunks may practice and
+play with it.
+
+Our code is free for all to use, worldwide. We don't much care if you
+don't approve of the software we write.
+
+We know that software can't be destroyed and that a widely dispersed
+system can't be shut down.
+
+** Braidpool 

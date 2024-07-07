@@ -1,0 +1,45 @@
+graph happiness {
+    labelloc="t"
+    pad=0.5
+    fontsize=45
+    label="P2P Pool"
+    layout=circo;
+    graph [ranksep=2];
+    node [fontsize=25]
+    "Miner 1"
+    "Miner 2"
+    "Miner 3"
+    "Miner 4"
+    "Miner 5"
+    "Miner 6"
+    
+    "Miner 1" -- {
+	"Miner 2"
+	"Miner 3"
+	"Miner 4"
+	"Miner 5"
+	"Miner 6"
+    }
+
+    "Miner 2" -- {
+	"Miner 3"
+	"Miner 4"
+	"Miner 5"
+	"Miner 6"
+    }
+
+    "Miner 3" -- {
+	"Miner 4"
+	"Miner 5"
+	"Miner 6"
+    }
+
+    "Miner 4" -- {
+	"Miner 5"
+	"Miner 6"
+    }
+
+    "Miner 5" -- {
+	"Miner 6"
+    }
+}
