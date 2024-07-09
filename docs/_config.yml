@@ -1,12 +1,11 @@
 plugins:
   - jekyll-remote-theme
   - jekyll-titles-from-headings
-author: ""
+author: Kulpreet Singh
 theme: minima
-minima:
-  social_links:
-    - { platform: github,  user_url: "https://github.com/pool2win" }
-    - { platform: twitter, user_url: "https://twitter.com/jungly" }
+twitter_username: jungly
+github_username: pool2win
+description: Bitcoin, distributed systems and Rust
 header_pages:
   - specification.md
 show_excerpts: true
