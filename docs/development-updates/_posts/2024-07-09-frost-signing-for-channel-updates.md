@@ -25,10 +25,9 @@ The hub based payout mechanism has two components:
 
 1. A coinbase that pays to hub and miner, or to the hub on revealing a
 preimage, or to the miner after a timeout.
-![coinbase]({{site.baseurl}}/assets/coinbase.png){: width="75%" }
-
+![coinbase]({{site.baseurl}}/assets/coinbase.png){:style="float: left; width: 100%;"}
 2. Multisig payment channel like construction between the Hub and each miner.
-![funding-tx]({{site.baseurl}}/assets/funding-tx.png){: width="75%" }
+![funding-tx]({{site.baseurl}}/assets/funding-tx.png){:style="float: left; width="100%" }
 
 There is also a protocol to release payments to miners once the pool
 finds a block. The construction doesn't allow the hub to deny payout
