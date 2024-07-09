@@ -10,8 +10,7 @@ minima:
 header_pages:
   - specification.md
 show_excerpts: true
-title: Kulpreet's Development Blog
-description: Bitcoin and Distributed Systems
+title: Development blog for jungly/pool2win
 logo: assets/BC_Logo_.png
 twitter:
   card: summary
