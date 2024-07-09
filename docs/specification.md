@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Specification"
+title: "TLA+ Specifications"
 image: assets/BC_Logo_.png
 ---
 
