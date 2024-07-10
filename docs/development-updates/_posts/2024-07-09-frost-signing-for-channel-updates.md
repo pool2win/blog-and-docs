@@ -81,9 +81,12 @@ level picture only.
 
 The above has the communication complexity of $O(n^2)$ as all members
 send one message to all other members. However, the round complexity
-is one. Everyone sends all the messages in the same round. In case of
-failures, we need to run the round again and we can parallelise these
-rounds as proposed by [ROAST](https://eprint.iacr.org/2022/550.pdf).
+is one. Everyone sends all the messages in the same round. At the end
+of this round, all parties can generate the aggregated signature.
+
+In case of failures, we need to run the round again and we can
+parallelise these rounds as proposed by
+[ROAST](https://eprint.iacr.org/2022/550.pdf).
 
 # Conclusion
 
