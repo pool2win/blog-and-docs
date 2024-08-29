@@ -104,7 +104,7 @@ network so that the share can be included in the DAG of shares.
 Recall that making sure that other miners in the DAG have your share
 is how miners can make sure they get rewarded for the share when the
 next block is found. See [BraidPool
-Proposal](https://github.com/kulpreet/braidpool-proposal/blob/main/proposal.pdf)
+Proposal](https://github.com/pool2win/blog-and-docs/blob/3cefde00d3b14ccf4f71f1e1cba53ff6c381af5a/proposal/proposal.pdf)
 for details.
 
 ## Shares Delivery ##
