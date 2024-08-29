@@ -21,3 +21,7 @@ gem "webrick"
 gem "minima"
 
 gem 'jekyll-titles-from-headings'
+
+gem "jekyll-asciidoc"
+
+gem "asciidoctor-diagram"

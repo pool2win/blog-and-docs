@@ -3,6 +3,16 @@ GEM
   specs:
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
+    asciidoctor (2.0.23)
+    asciidoctor-diagram (2.3.1)
+      asciidoctor (>= 1.5.7, < 3.x)
+      asciidoctor-diagram-ditaamini (~> 1.0)
+      asciidoctor-diagram-plantuml (~> 1.2021)
+      rexml
+    asciidoctor-diagram-batik (1.17)
+    asciidoctor-diagram-ditaamini (1.0.3)
+    asciidoctor-diagram-plantuml (1.2024.6)
+      asciidoctor-diagram-batik (~> 1.17)
     colorator (1.1.0)
     concurrent-ruby (1.3.3)
     em-websocket (0.5.3)
@@ -27,6 +37,9 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
+    jekyll-asciidoc (3.0.1)
+      asciidoctor (>= 1.5.0, < 3.0.0)
+      jekyll (>= 3.0.0)
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-remote-theme (0.4.3)
@@ -79,7 +92,9 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  asciidoctor-diagram
   jekyll (= 3.9.3)
+  jekyll-asciidoc
   jekyll-feed
   jekyll-remote-theme
   jekyll-seo-tag

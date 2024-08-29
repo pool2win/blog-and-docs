@@ -1,6 +1,8 @@
 plugins:
   - jekyll-remote-theme
   - jekyll-titles-from-headings
+  - jekyll-asciidoc
+  - asciidoctor-diagram
 author: Kulpreet Singh
 theme: minima
 twitter_username: jungly
@@ -9,7 +11,7 @@ description: Bitcoin, distributed systems and Rust
 header_pages:
   - specification.md
 show_excerpts: true
-title: Development blog for jungly/pool2win
+title: Kulpreet's Blog
 logo: assets/BC_Logo_.png
 twitter:
   card: summary
