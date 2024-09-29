@@ -10,6 +10,7 @@ github_username: pool2win
 description: Bitcoin, distributed systems and Rust
 header_pages:
   - specification.md
+  - about.md
 show_excerpts: true
 title: Kulpreet's Blog
 logo: assets/BC_Logo_.png
