@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Radpool Federation
+title: Custody of Miner's Coins in Radpool
 image: /assets/drake-blocktemplates-hashrate.jpg
 ---
 
