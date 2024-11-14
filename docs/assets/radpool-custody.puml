@@ -1,0 +1,26 @@
+@startuml
+
+[*] --> MSP_UTXO 
+MSP_UTXO: MSP has the coins initially
+
+MSP_UTXO --> DLC_Funded : Create DLC Tx and Exchange Signatures
+DLC_Funded : MSP locks in coins
+DLC_Funded : Miner doesn't lock in anything
+
+DLC_Funded --> DLC_Attested : Radpool Published Attestation
+DLC_Attested : Miner can broadcast DLC output
+
+DLC_Attested --> Miner_Custody : Miner broadcasts DLC output
+Miner_Custody : Miner has custody of coins
+
+Miner_Custody --> [*]
+
+MSP_UTXO --> DLC_Refund : Create Refund Tx
+DLC_Refund : If miner leaves, MSP can claim coins
+
+DLC_Refund --> MSP_Custody : Miner doesn't claim coins
+MSP_Custody : MSP regains custody
+
+MSP_Custody --> [*]
+
+@enduml
