@@ -4,11 +4,13 @@ title: Radpool and Fedipool
 image: assets/radpool-logo.png
 ---
 
-There have been a few discussions around Fedipool in the past. I want
-explain how Radpool design is different from Fedipool and from my
-perspective a design that has better chances of adoption.
+There have been a few discussions around Fedipool in the past. I
+explain how Radpool design is different from Fedipool. I also point
+out to how the Radpool network 1) can scale for providing payout
+variance reduction, and 2) provide a payout mechanism that provides
+unilateral exits.
 
-Links to previous discussions
+Links to previous discussions on Fedopill
 
 - [Github Discussion](https://github.com/fedimint/fedimint/discussions/1504)
 - [Delving Bitcoin discussion](https://delvingbitcoin.org/t/fedimint-overview-and-fedipool-theorizing/110/1)
@@ -35,9 +37,11 @@ to sign transactions as the federation. This creates a limit on the
 size of the federation, as even one node failing will result in the
 federation stalling.
 
-Radpool is built from the ground up with DKG and FROST in mind. The
-design provides solutions for robust DKG and threshold signatures
-using optimisations to ROAST (mentioned in the paper itself).
+Radpool is built from the ground up with DKG and FROST, which lets the
+network make progress as long as a threshold number of parties are
+honest and functional. The design provides solutions for robust DKG
+and threshold signatures using optimisations to ROAST (mentioned in
+the paper itself).
 
 🤩 Radpool uses robust DKG and TSS - scale with fault tolerance
 
@@ -52,7 +56,12 @@ only so much.
 In Radpool, the membership of the federation is decided using the
 hashrate that each member's miners bring to the pool. Also, a new
 member has to wait for two weeks before it can participate in the DKG
-or the threshold signature for the pool.
+or the threshold signature for the pool. This distributes trust across
+multiple parties who all benefit from the network making progress and
+staying honest. The only way to attack the pool is to to get 60% of
+the Radpool hashrate spread between multiple MSPs. See
+[Membership](https://www.radpool.xyz/1/frost-federation.html#_membership)
+for details.
 
 🤩 Radpool uses PoW to prevent Sybil and reduce trust
 
@@ -73,13 +82,12 @@ Everyone
 
 ## Accounting
 
-Since Fedipool will be a closed network, the share accounting can be
-made transparent and auditable.
-
-Radpool, is an open federation and therefore the accounting
-information is freely available to anyone who connects to the
-federation to receive the share information. Think of MSPs and
-bittorrent seeds for share database.
+Fedipool will be a closed network, however, the share accounting can
+be made transparent and auditable. In this way, the two pools are
+similar. I want to point out that Radpool is an open federation and
+therefore the accounting information is freely available to anyone who
+connects to the federation. Think of MSPs as bittorrent seeds for the
+shares database.
 
 🤩 Radpool freely provides access to share database. Fedipool can do
 this too.
