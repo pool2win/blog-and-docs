@@ -20,5 +20,5 @@ second.
     (/ 100000 15.0) ~ 6666 validations per second
 
 This number of hashes, 7000 or so is literally peanuts compared to
-millions of hashes we can run on i9 or Ryzen 9 machines. Ref:
-https://openbenchmarking.org/test/pts/openssl&eval=375e4665476bc507fd02b2459105dec77138b4c9#metrics
+millions of hashes we can run on i9 or Ryzen 9 machines. Ref
+[OpenBenchmarking](https://openbenchmarking.org/test/pts/openssl&eval=375e4665476bc507fd02b2459105dec77138b4c9#metrics)
