@@ -10,7 +10,7 @@ out to how the Radpool network 1) can scale for providing payout
 variance reduction, and 2) provide a payout mechanism that provides
 unilateral exits.
 
-Links to previous discussions on Fedopill
+Links to previous discussions on Fedipool
 
 - [Github Discussion](https://github.com/fedimint/fedimint/discussions/1504)
 - [Delving Bitcoin discussion](https://delvingbitcoin.org/t/fedimint-overview-and-fedipool-theorizing/110/1)
@@ -32,7 +32,7 @@ permission from the mint.
 ## DKG and FROST
 
 Fedipool [uses
-Musig](https://github.com/fedimint/fedimint/blob/569e6d9e9f55671da6ac1682dcc1794835cb1559/docs/lifecycle.md?plain=1#L6)
+Musig](https://bitcoinops.org/en/topics/musig/)
 to sign transactions as the federation. This creates a limit on the
 size of the federation, as even one node failing will result in the
 federation stalling.
@@ -63,7 +63,7 @@ the Radpool hashrate spread between multiple MSPs. See
 [Membership](https://www.radpool.xyz/1/frost-federation.html#_membership)
 for details.
 
-🤩 Radpool uses PoW to prevent Sybil and reduce trust
+🤩 Radpool uses PoW to prevent Sybil attack and reduce trust
 
 ## Open Network
 
