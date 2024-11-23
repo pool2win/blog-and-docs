@@ -31,11 +31,10 @@ permission from the mint.
 
 ## DKG and FROST
 
-Fedipool [uses
-Musig](https://bitcoinops.org/en/topics/musig/)
-to sign transactions as the federation. This creates a limit on the
-size of the federation, as even one node failing will result in the
-federation stalling.
+Fedipool bitcoin multisig to sign transactions as the federation. This
+limits the size of the federation to the largest multisig possible on
+chain. A larger federation is more resilient to centralisation
+pressures.
 
 Radpool is built from the ground up with DKG and FROST, which lets the
 network make progress as long as a threshold number of parties are
