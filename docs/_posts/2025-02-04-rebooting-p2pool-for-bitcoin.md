@@ -4,12 +4,12 @@ title: Rebooting P2Pool For Bitcoin
 image: assets/BC_Logo_.png
 ---
 
-[P2Pool](http://p2pool.in/) for bitcoin was a project that provided
-miners way to build block templates and earn payouts directly from the
-the block coinbase. In this post, I describe an approach to reboot
-P2Pool. The pool is being developed in Rust and leans on excellent
-libraries like rust-bitcoin and libp2p. The repository is here on
-github:
+[P2Pool](http://p2pool.in/) for bitcoin was a decentralised mining
+pool for bitcoin that provided miners way to build block templates and
+earn payouts directly from the the block coinbase. In this post, I
+describe an approach to reboot P2Pool. The pool is being developed in
+Rust and leans on excellent libraries like rust-bitcoin and
+libp2p. The repository is here on github:
 [https://github.com/pool2win/p2pool-v2](https://github.com/pool2win/p2pool-v2)
 
 ## P2Pool Limitations
