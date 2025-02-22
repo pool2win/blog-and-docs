@@ -8,18 +8,23 @@ Building P2Poolv2 is made possible with over a decade of work that has
 gone into the Bitcoin ecosystem. The obvious tools to use are the rust
 libraries for bitcoin script and block validation. However, when it
 comes to mining there is a tool that one can't avoid but use, and that
-is CKPool. In P2Poolv2, we need a few things that a normal solo pool
-instance doesn't need and in this post I describe how we have extended
-CKPool to provide the APIs we need and how we consume the data
-provided by CKPool, i.e. the workbases and shares.
+is CKPool. In P2Poolv2, we need a few things that a solo pool instance
+doesn't need and in this post I describe how we have extended
+CKPool. These extensions provide the APIs we need to build
+P2Pool. This post also describe how we consume the data provided by
+CKPool, i.e. the various workbases and shares we use to build and
+validate blocks.
 
 ## CKPool - Battle Tested Pool Implementation
 
 [CKPool](https://bitbucket.org/ckolivas/ckpool) is a pool
 implementation by Con Kolivas that has been in production use for a
-long time now. It is implemented in C and is highly optimised to
-provide a pool instance. It is the code that runs the ckpool solo
-instance [handling over 180 PH/s](https://solostats.ckpool.org/).
+long time now. It is implemented in C and is optimised to provide a
+pool instance. It also covers a wide range for ASICs hardware. As the
+industry experimented and evolved, CKPool has kept pace with it. We
+use the `solobtc` branch from the repository. This is the codebase
+that runs the ckpool solo instance [handling over 180
+PH/s](https://solostats.ckpool.org/).
 
 In P2Poolv2, we need a stratum server for each miner that is running a
 p2pool node. It is kind of a no brainer to use a FOSS tool like CKPool
@@ -39,8 +44,8 @@ mode. The interactions are:
    to validate that the shares they receive from a node belong to a
    bitcoin block - even if it doesn't have enough work to meet the
    current bitcoin difficulty.
-1.  We need  a  way to  send  the coinbase  to CKPool  to  use in  the
-   blocktemplate. CKPool  generates a coinbase  to payout to  a single
+1. In future we need to send the coinbase to CKPool to use in the
+   blocktemplate. CKPool generates a coinbase to payout to a single
    P2PKH address - we will need to make a change here as well. We will
    need to send up to 10 addresses here.
 2. We also need a way to adjust difficulty for miners connected to the
