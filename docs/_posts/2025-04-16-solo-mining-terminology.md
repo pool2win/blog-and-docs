@@ -37,6 +37,7 @@ together.
 
 |------------------------|----------------|-----------------------------------|-------------------|
 | Block Template Builder | Reward shared? | Coinbase built/validated by pool? | Example           |
+|------------------------|----------------|-----------------------------------|-------------------|
 | Miner                  | Yes            | Yes                               | SV2/DATUM         |
 | Miner                  | No             | Yes                               | --                |
 | Miner                  | Yes            | No                                | P2Pool            |
