@@ -6,7 +6,7 @@ categories: bitcoin p2pool decentralization
 image: assets/p2poolv2.png
 ---
 
-In the early days of Bitcoin ming, **P2Pool** emerged as a
+In the early days of Bitcoin mining, **P2Pool** emerged as a
 decentralized mining pool protocol, allowing miners to collaborate
 without relying on a central authority. But as the network grew, so
 did the need for more accessible solutions. The community started to
